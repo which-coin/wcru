@@ -1,5 +1,5 @@
 const coins = [
-  { name: "Bitcoin", image: "bitcoin.png", color: "#f7931a" },
+  { name: "Bitcoin", image: "images/bitcoin.png", color: "#f7931a" },
   { name: "Ethereum", image: "images/ethereum.png", color: "#3c3c3d" },
   { name: "Ripple", image: "images/ripple.png", color: "#346aa9" },
   { name: "Litecoin", image: "images/litecoin.png", color: "#bcbcbc" },
