@@ -45,7 +45,6 @@ document.addEventListener("DOMContentLoaded", function() {
         document.getElementById("result").innerText = randomCoin.name;
         document.getElementById("coinImage").src = randomCoin.image;
 
-        // İlk seçim yapıldıktan sonra butonun konumunu değiştir
-        twitterBtn.classList.add("moved");
+       
     });
 });
