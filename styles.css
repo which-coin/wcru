@@ -50,6 +50,12 @@ button:hover {
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
+  z-index: 10; /* Butonun diğer öğelerin üstünde görünmesini sağlar */
+    width: 150px; /* Sabit genişlik */
+    height: 50px; /* Sabit yükseklik */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
