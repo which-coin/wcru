@@ -52,9 +52,5 @@ button:hover {
     border-radius: 5px;
 }
 
-/* İlk seçim yapıldıktan sonra butonun yeni konumu */
-.moved {
-    top: auto;
-    bottom: 10px;
-    right: 10px;
+
 }
