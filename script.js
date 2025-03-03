@@ -22,3 +22,30 @@ document.getElementById('pickCoinBtn').addEventListener('click', function() {
 
   document.body.style.backgroundColor = selectedCoin.color; // Change the background color
 });
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    const pickCoinBtn = document.getElementById("pickCoinBtn");
+    const twitterBtn = document.getElementById("twitterBtn");
+    pickCoinBtn.addEventListener("click", function() {
+        const coins = [
+            { name: "Bitcoin", image: "images/bitcoin.png" },
+            { name: "Cardano", image: "images/cardano.png" },
+            { name: "Chainlink", image: "images/chainlink.png" },
+            { name: "Dogecoin", image: "images/dogecoin.png" },
+            { name: "Ethereum", image: "images/ethereum.png" },
+            { name: "Litecoin", image: "images/litecoin.png" },
+            { name: "Polkadot", image: "images/polkadot.png" },
+            { name: "Ripple", image: "images/ripple.png" },
+            { name: "Shiba Inu", image: "images/shiba_inu.png" },
+            { name: "Stellar", image: "images/stellar.png" }
+        ];
+
+        const randomCoin = coins[Math.floor(Math.random() * coins.length)];
+        document.getElementById("result").innerText = randomCoin.name;
+        document.getElementById("coinImage").src = randomCoin.image;
+
+        // İlk seçim yapıldıktan sonra butonun konumunu değiştir
+        twitterBtn.classList.add("moved");
+    });
+});
